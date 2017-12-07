@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c09b5796-ae11-4372-bdcf-18a52cde4498" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/TestingMain.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/TestingMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,7 +65,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="230">
               <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
@@ -85,9 +86,10 @@
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/TestingMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1512659622310" expanded="true" signature="414:966" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -881,7 +883,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14514000" />
+    <option name="totallyTimeSpent" value="15284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1120,6 +1122,7 @@
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1512659622310" expanded="true" signature="414:966" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1158,6 +1161,7 @@
           <caret line="4" column="78" lean-forward="false" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1512659622310" expanded="true" signature="414:966" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1272,9 +1276,10 @@
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/TestingMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1512659622310" expanded="true" signature="414:966" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1293,7 +1298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="230">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
