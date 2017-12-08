@@ -109,7 +109,7 @@
       <file leaf-file-name="CollectionTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/collection/CollectionTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="765">
               <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1053,7 +1053,7 @@
       <workItem from="1512505142904" duration="5569000" />
       <workItem from="1512651744365" duration="812000" />
       <workItem from="1512661218658" duration="7318000" />
-      <workItem from="1512752049251" duration="6168000" />
+      <workItem from="1512752049251" duration="6791000" />
     </task>
     <servers />
   </component>
@@ -1090,7 +1090,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28917000" />
+    <option name="totallyTimeSpent" value="29540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1630,7 +1630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/collection/CollectionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="765">
           <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
