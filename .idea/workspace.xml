@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c09b5796-ae11-4372-bdcf-18a52cde4498" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/ForumStatistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/Statistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/stub/WeatherForecast.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/mock/WeatherForecastTestSuite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/stub/TemperaturesStub.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/stub/WeatherForecastTestSuite.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kodilla-testing/out/production/classes/com/kodilla/testing/shape/Test.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/out/production/classes/com/kodilla/testing/shape/ShapeCollector.class" afterPath="$PROJECT_DIR$/kodilla-testing/out/production/classes/com/kodilla/testing/shape/ShapeCollector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/kodilla-course_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/kodilla-course_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/build.gradle" afterPath="$PROJECT_DIR$/kodilla-testing/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/ForumStatistics.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/ForumStatistics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -91,8 +76,8 @@
       <file leaf-file-name="ForumStatistics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/ForumStatistics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state relative-caret-position="697">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +88,8 @@
       <file leaf-file-name="CalculateAdvStatisticsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="154" column="31" lean-forward="false" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,16 +117,9 @@
       <file leaf-file-name="LibraryUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="121">
               <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,12 +137,9 @@
       <file leaf-file-name="BookLibrary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,14 +147,10 @@
       <file leaf-file-name="BookDirectoryTestSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="223">
+              <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#1439#1440#0" expanded="true" />
-                <element signature="e#1517#1518#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1075,7 +1046,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculations100users">
+  <component name="RunManager" selected="JUnit.CalculateAdvStatisticsTest">
     <configuration name="BookDirectoryTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1088,6 +1059,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kodilla.testing.library" />
       <option name="MAIN_CLASS_NAME" value="com.kodilla.testing.library.BookDirectoryTestSuite" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/kodilla-testing" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CalculateAdvStatisticsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kodilla.testing.forum.statistics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kodilla-testing_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kodilla.testing.forum.statistics" />
+      <option name="MAIN_CLASS_NAME" value="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1139,31 +1135,6 @@
       <option name="PACKAGE_NAME" value="com.kodilla.testing.forum.statistics" />
       <option name="MAIN_CLASS_NAME" value="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" />
       <option name="METHOD_NAME" value="testCaseAvaragesCalculationsNoCommemtsAdded" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/kodilla-testing" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.kodilla.testing.forum.statistics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="kodilla-testing_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kodilla.testing.forum.statistics" />
-      <option name="MAIN_CLASS_NAME" value="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" />
-      <option name="METHOD_NAME" value="testCaseAvaragesCalculationsNoPostsAdded" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1387,18 +1358,18 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.ShapeCollector" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.KodillaCourseApplication" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculations100users" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoCommemtsAdded" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoCommemtsAdded" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculations100users" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoCommemtsAdded" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculations100users" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoCommemtsAdded" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -1427,25 +1398,13 @@
       <workItem from="1513052661020" duration="2635000" />
       <workItem from="1513094529099" duration="11209000" />
       <workItem from="1513179708387" duration="1455000" />
-      <workItem from="1513181520815" duration="489000" />
+      <workItem from="1513181520815" duration="9463000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculations100users - 2017.12.13 at 17h 15m 14s.xml">
       <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculations100users" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoPostsAdded - 2017.12.12 at 22h 03m 36s.xml">
-      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoPostsAdded - 2017.12.12 at 22h 04m 20s.xml">
-      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoPostsAdded - 2017.12.12 at 22h 04m 46s.xml">
-      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoPostsAdded - 2017.12.12 at 22h 05m 18s.xml">
-      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoPostsAdded" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 16h 48m 19s.xml">
       <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
@@ -1459,12 +1418,24 @@
     <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 17h 06m 13s.xml">
       <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 22h 13m 50s.xml">
+      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 22h 26m 38s.xml">
+      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 22h 27m 08s.xml">
+      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateAdvStatisticsTest_testCaseAvaragesCalculationsNoUsers - 2017.12.13 at 22h 27m 51s.xml">
+      <configuration name="CalculateAdvStatisticsTest.testCaseAvaragesCalculationsNoUsers" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CalculateAdvStatisticsTest_testCaseAveragesCalculationsMoreCommentsThenPosts - 2017.12.12 at 22h 02m 38s.xml">
       <configuration name="CalculateAdvStatisticsTest.testCaseAveragesCalculationsMoreCommentsThenPosts" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100366000" />
+    <option name="totallyTimeSpent" value="109340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1478,9 +1449,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1546,22 +1517,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java</url>
-          <line>141</line>
-          <properties class="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" method="testCaseAvaragesCalculationsNoUsers">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java</url>
           <line>162</line>
           <properties class="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" method="testCaseAvaragesCalculations100users">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java</url>
+          <line>141</line>
+          <properties class="com.kodilla.testing.forum.statistics.CalculateAdvStatisticsTest" method="testCaseAvaragesCalculationsNoUsers">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1846,32 +1817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/Statistics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1888,24 +1833,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="223">
+          <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/forum/statistics/ForumStatistics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="697">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1914,8 +1871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/forum/statistics/CalculateAdvStatisticsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="154" column="31" lean-forward="false" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

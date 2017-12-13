@@ -152,7 +152,7 @@ public class CalculateAdvStatisticsTest {
         //Then
         Assert.assertEquals(0.0, forumStatistics.commentsAveragePerUser,0);
         Assert.assertEquals(0.0, forumStatistics.postsAveragePerUser,0);
-        Assert.assertEquals(3.0, forumStatistics.commentsAveragePerPost,0);;
+        Assert.assertEquals(0.33, forumStatistics.commentsAveragePerPost,0);;
     }
 
 
