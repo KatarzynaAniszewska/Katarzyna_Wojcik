@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c09b5796-ae11-4372-bdcf-18a52cde4498" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/out/production/classes/com/kodilla/testing/library/BookLibrary.class" afterPath="$PROJECT_DIR$/kodilla-testing/out/production/classes/com/kodilla/testing/library/BookLibrary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/out/test/classes/com/kodilla/testing/library/BookDirectoryTestSuite.class" afterPath="$PROJECT_DIR$/kodilla-testing/out/test/classes/com/kodilla/testing/library/BookDirectoryTestSuite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java" afterPath="$PROJECT_DIR$/kodilla-testing/src/test/java/com/kodilla/testing/library/BookDirectoryTestSuite.java" />
@@ -118,7 +116,7 @@
       <file leaf-file-name="LibraryUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="172">
               <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding />
             </state>
@@ -138,8 +136,8 @@
       <file leaf-file-name="BookLibrary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -152,6 +150,7 @@
               <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2007#2013#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1148,7 +1147,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BookDirectoryTestSuite.testListBooksWithConditionMoreThan20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDirectoryTestSuite.testlistBooksInHandsOfNumberOfBooks0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.kodilla.testing.library.*" />
@@ -1160,7 +1159,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kodilla.testing.library" />
       <option name="MAIN_CLASS_NAME" value="com.kodilla.testing.library.BookDirectoryTestSuite" />
-      <option name="METHOD_NAME" value="testListBooksWithConditionMoreThan20" />
+      <option name="METHOD_NAME" value="testlistBooksInHandsOfNumberOfBooks0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1359,18 +1358,18 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.ShapeCollector" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.KodillaCourseApplication" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.testListBooksWithConditionMoreThan20" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfReturnList" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks1" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks5" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfReturnList" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks1" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks5" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.testlistBooksInHandsOfNumberOfBooks0" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks5" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfReturnList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.testListBooksWithConditionMoreThan20" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.testlistBooksInHandsOfNumberOfBooks0" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks5" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfNumberOfBooks1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BookDirectoryTestSuite.TestlistBooksInHandsOfReturnList" />
       </list>
     </recent_temporary>
   </component>
@@ -1400,15 +1399,12 @@
       <workItem from="1513094529099" duration="11209000" />
       <workItem from="1513179708387" duration="1455000" />
       <workItem from="1513181520815" duration="14109000" />
-      <workItem from="1513265877707" duration="412000" />
+      <workItem from="1513265877707" duration="1525000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookDirectoryTestSuite - 2017.12.13 at 22h 57m 29s.xml">
-      <configuration name="BookDirectoryTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookDirectoryTestSuite - 2017.12.13 at 22h 59m 26s.xml">
+    <history-entry file="BookDirectoryTestSuite - 2017.12.14 at 16h 50m 35s.xml">
       <configuration name="BookDirectoryTestSuite" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BookDirectoryTestSuite_TestlistBooksInHandsOfNumberOfBooks1 - 2017.12.13 at 23h 44m 09s.xml">
@@ -1435,9 +1431,12 @@
     <history-entry file="BookDirectoryTestSuite_testListBooksWithConditionMoreThan20 - 2017.12.13 at 22h 59m 17s.xml">
       <configuration name="BookDirectoryTestSuite.testListBooksWithConditionMoreThan20" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BookDirectoryTestSuite_testlistBooksInHandsOfNumberOfBooks0 - 2017.12.14 at 19h 45m 41s.xml">
+      <configuration name="BookDirectoryTestSuite.testlistBooksInHandsOfNumberOfBooks0" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114398000" />
+    <option name="totallyTimeSpent" value="115511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1445,12 +1444,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1470,7 +1470,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07261725" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1850,7 +1849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/LibraryUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="172">
           <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding />
         </state>
@@ -1866,8 +1865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing/src/main/java/com/kodilla/testing/library/BookLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1878,6 +1877,7 @@
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2007#2013#0" expanded="true" />
           </folding>
         </state>
       </provider>
