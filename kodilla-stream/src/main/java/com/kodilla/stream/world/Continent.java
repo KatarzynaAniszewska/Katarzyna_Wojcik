@@ -4,23 +4,18 @@ import java.util.List;
 
 
 public final class Continent {
-   private final Country country;
-   private final List<Country> theContinent = new ArrayList<>();
 
-    public Continent(Country country) {
-        this.country = country;
+   private List<Country> countryList = new ArrayList<>();
+
+    public Continent(List<Country> europe) {
     }
 
-    public List<Country>getContinent(){
-      theContinent.add(country);
-      return theContinent;
+    public List<Country>addCountry(Country country){
+      countryList.add(country);
+      return countryList;
    }
 
-   public Country getCountry() {
-      return country;
-   }
-
-   public List<Country> getTheContinent() {
-      return theContinent;
+   public List<Country> getCountryList() {
+      return countryList;
    }
 }

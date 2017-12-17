@@ -8,27 +8,21 @@ import java.util.stream.Collectors;
 
 public final class World {
 
-    private final Continent continent;
-
-    public World(Continent continent) {
-        this.continent = continent;
-    }
-
-private final List<Continent> world = new ArrayList<>();
+    private List<Continent> world = new ArrayList<>();
 
     public List<Continent> getWorld() {
         return world;
     }
 
-    public List<Continent> getContinent() {
+    public void addContinent(Continent continent) {
         world.add(continent);
-        return world;
     }
     public BigDecimal getPeopleQuantity(){
         return world.stream()
-                .flatMap(c->c.getTheContinent().stream())
+                .flatMap(c->c.getCountryList().stream())
                 .map(country -> country.getNumberOfPeople())//lub reference Country::getNumberOfPeople
                 .reduce(BigDecimal.ZERO,(sum,current)->sum=sum.add(current));
 
     }
+
 }
