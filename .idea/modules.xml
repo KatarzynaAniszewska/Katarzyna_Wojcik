@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/kodilla-course.iml" filepath="$PROJECT_DIR$/kodilla-course.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-course_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-course_main.iml" group="kodilla-course" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-course_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-course_test.iml" group="kodilla-course" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-exception.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-exception.iml" group="kodilla-exception" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-exception/kodilla-exception_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-exception/kodilla-exception_main.iml" group="kodilla-exception" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-exception/kodilla-exception_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-exception/kodilla-exception_test.iml" group="kodilla-exception" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-stream.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-stream.iml" group="kodilla-stream" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_main.iml" group="kodilla-stream" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_test.iml" group="kodilla-stream" />
