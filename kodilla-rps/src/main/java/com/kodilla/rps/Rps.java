@@ -11,39 +11,42 @@ import static java.util.Arrays.*;
 
 public class Rps {
 
-    int playerNumber;
-    int computerNumber;
+
     int numberOfRounds;
-    int numberOfPlayedRounds;
-    int numberOfPlayerWins;
-    int numberOfComputerWins;
     String playerName;
     Scanner sc = new Scanner(System.in);
-
-
 
 //1 - rock, 2-paper, 3 - scissors
     //rock crushes scissors,scissors cuts paper, paper eats rock
 
-    public void printResult(int player1number, int player2number) {
-        System.out.println("Round " + numberOfPlayedRounds);
-        String functionalKeys[]={"rock","paper","scissors"};
-        System.out.println("Your move "+functionalKeys[player1number-1]+"\nopponent move " + functionalKeys[player2number-1]);
+    public void printResultWithNames(int player1number, int player2number) {
+        String movesNames[]={"rock","paper","scissors"};
         if (player1number == 1 && player2number == 3) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Rock crushes scissors");
         } else if (player1number == 3 && player2number == 2) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Scissors cuts paper");
         } else if (player1number == 2 && player2number == 1) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Paper eats rock");
         } else if (player1number == 1 && player2number == 1) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Rock vs rock. It's a tie !");
         } else if (player1number == 2 && player2number == 2) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Paper vs paper. It's a tie !");
         } else if (player1number == 3 && player2number == 3) {
+            System.out.println("Your move " +movesNames[player1number-1]);
+            System.out.println("Computer move " +movesNames[player2number-1]);
             System.out.println("Scissors vs scissors. It's a tie !");
         }
 
-        System.out.println(playerName + " won " + numberOfPlayerWins + "\nOpponent won " + numberOfComputerWins);
     }
 
     public void introduceTheGame() {
@@ -67,13 +70,15 @@ public class Rps {
     }
 
     public void playTheGame() {
-        numberOfComputerWins=0;
-        numberOfComputerWins=0;
+        int numberOfComputerWins = 0;
+        int numberOfPlayerWins = 0;
+        int numberOfPlayedRounds=1;
 
-        while (numberOfComputerWins <= numberOfRounds-1 && numberOfRounds-1 >= numberOfPlayerWins) {
+        while ( numberOfComputerWins <= numberOfRounds-1 && numberOfRounds-1 >= numberOfPlayerWins) {
+
 
                 System.out.println("Please make Your move.");
-                int numberOfPlayedRounds = 0;
+
                 String playerInput = sc.next();
                 int playerNumber = Integer.parseInt(playerInput);
 
@@ -82,30 +87,38 @@ public class Rps {
 
                 if ((playerNumber == 1 && computerNumber == 1) || (playerNumber == 2 && computerNumber == 2) ||
                         (playerNumber == 3 && computerNumber == 3)) {
-                    numberOfPlayedRounds=numberOfPlayerWins + 0;
-                    numberOfComputerWins=numberOfComputerWins + 0;
-                    numberOfPlayedRounds = numberOfPlayedRounds + 1;
-                    printResult(playerNumber,computerNumber);
-                }
-                else if ((playerNumber == 1 && computerNumber == 3) || (playerNumber == 2 && computerNumber == 1) ||
-                        (playerNumber == 3 && computerNumber == 2)) {
-                    numberOfPlayerWins = numberOfPlayerWins + 0;
-                    numberOfComputerWins = numberOfComputerWins + 1;
-                    numberOfPlayedRounds = numberOfPlayedRounds + 1;
-                    printResult(playerNumber, computerNumber);
 
+                    System.out.println("Round "+numberOfPlayedRounds);
+                    printResultWithNames(playerNumber,computerNumber);
+                    System.out.println(playerName+" wins: "+numberOfPlayerWins);
+                    System.out.println("Computer wins: "+numberOfComputerWins);
+                    System.out.println(playerNumber+" "+computerNumber);
                 }
                 else if ((playerNumber == 1 && computerNumber == 2) || (playerNumber == 2 && computerNumber == 3) ||
                         (playerNumber == 3 && computerNumber == 1)) {
-                    numberOfPlayerWins = numberOfPlayerWins + 1;
-                    numberOfComputerWins = numberOfComputerWins + 0;
-                    numberOfPlayedRounds = numberOfPlayedRounds + 1;
-                    printResult(computerNumber,playerNumber);
+
+
+
+                    numberOfPlayerWins=numberOfPlayerWins+0;
+                    numberOfComputerWins = numberOfComputerWins+1;
+                    System.out.println("Round "+numberOfPlayedRounds);
+                    printResultWithNames(computerNumber,playerNumber);
+                    System.out.println(playerName+" wins: "+numberOfPlayerWins);
+                    System.out.println("Computer wins: "+numberOfComputerWins);
+                    System.out.println(playerNumber+" "+computerNumber);
                 }
+                else if ((playerNumber == 1 && computerNumber == 3) || (playerNumber == 2 && computerNumber == 1) ||
+                        (playerNumber == 3 && computerNumber == 2)) {
 
-
-
-
+                    numberOfPlayerWins = numberOfPlayerWins+1;
+                    numberOfComputerWins=numberOfComputerWins+0;
+                    System.out.println("Round "+numberOfPlayedRounds);
+                    printResultWithNames(playerNumber,computerNumber);
+                    System.out.println(playerName+" wins: "+numberOfPlayerWins);
+                    System.out.println("Computer wins: "+numberOfComputerWins);
+                    System.out.println(playerNumber+" "+computerNumber);
+                }
+            numberOfPlayedRounds = numberOfPlayedRounds + 1;
             }
         System.out.println("The game is over");
         if (numberOfComputerWins>numberOfPlayerWins){System.out.println("Sorry You've lost the game.");}
