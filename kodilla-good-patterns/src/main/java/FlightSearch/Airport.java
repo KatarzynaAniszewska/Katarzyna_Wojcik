@@ -12,11 +12,6 @@ public class Airport {
     Set<Airport> arrivalAirports = new HashSet<>();
     Set<Set<Airport>> departureAirports = new HashSet<>();
 
-
-    public Set<Set<Airport>> getDepartureAirports() {
-        return departureAirports;
-
-    }
     public Airport(String cityName) {
         this.cityName = cityName;
     }
@@ -30,12 +25,7 @@ public class Airport {
     }
 
     public void addArrivalAirport(Airport airport) {
-         arrivalAirports.add(airport);
-
-    }
-    public void addDepartureAirport(Set<Airport>arrivalAirports){
-
-        departureAirports.add(arrivalAirports);
+        arrivalAirports.add(airport);
     }
 
     @Override
@@ -71,26 +61,11 @@ public class Airport {
     }
 
 
-    public Set<String> getArrivalCityTransferFlight(String cityName){
+    public Set<String> getArrivalCityTransferFlight(String cityName) {
         return arrivalAirports.stream()
                 .flatMap(airport -> airport.getArrivalAirports().stream())
-                .filter(airport -> airport !=this)
+                .filter(airport -> airport != this)
                 .map(Airport::getCityName)
                 .collect(Collectors.toSet());
-
     }
-    //To nie jest właściwe rozwiązanie, ale nie ma pomysłu jak wyciągnąć właściwe dane
-    public Set<String > getDeparture(String cityName){
-    return departureAirports.stream()
-            .flatMap(d->d.stream())
-            .map(x->x.getCityName())
-            .filter(x1->x1.equals(cityName))
-            .collect(Collectors.toSet());
-
-
-
-
-    }
-
-
 }
