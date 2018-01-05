@@ -11,7 +11,7 @@ public class Calculator {
 
     public double add(double a, double b){
         display.displayValue(val);
-        return val = a+b;
+        return val=a+b;
     }
     public double sub(double a, double b){
         display.displayValue(val);
@@ -19,11 +19,11 @@ public class Calculator {
     }
     public double mul(double a, double b){
         display.displayValue(val);
-        return a*b;
+        return val= a*b;
     }
     public double div (double a, double b){
     display.displayValue(val);
-    return a/b;
+    return val= a/b;
     }
 
 }

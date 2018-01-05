@@ -1,6 +1,7 @@
 package com.kodilla.spring.calculator;
 
 import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -11,6 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 
 public class CalculatorTestSuite {
+    @Test
     public void testCalculations(){
         //Given
         ApplicationContext context=
@@ -19,13 +21,13 @@ public class CalculatorTestSuite {
 
         //When
         double valAdd = calculator.add(8,8);
-        double valSub = calculator.sub(8,8);
+        double valSub = calculator.sub(8,7);
         double valMul = calculator.mul(8,8);
         double valDiv = calculator.div(8,8);
 
         //Then
         Assert.assertEquals(16,valAdd,0);
-        Assert.assertEquals(0,valSub,0);
+        Assert.assertEquals(1,valSub,0);
         Assert.assertEquals(64,valMul,0);
         Assert.assertEquals(1,valDiv,0);
     }
