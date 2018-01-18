@@ -1,13 +1,10 @@
 package com.kodilla.rps;
 
 public class RpsRunner {
-    public static void main(String []args) {
-        Rpsv1 rps = new Rpsv1();
+    public static void main(String[] args) {
+        Rps rps = new Rps();
         rps.introduceTheGame();
         rps.playTheGame();
-
-
-
-            }
-        }
+    }
+}
 
