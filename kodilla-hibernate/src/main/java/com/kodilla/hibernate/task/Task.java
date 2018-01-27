@@ -1,40 +1,41 @@
 package com.kodilla.hibernate.task;
 
-import com.kodilla.hibernate.task.dao.TaskDao;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
-@Table(name="TASKS")
-
-public class Task{
-
-    private int Id;
+@Table(name = "TASKS")
+public final class Task {
+    private int id;
     private String description;
     private Date created;
     private int duration;
 
+    public Task() {
+    }
+
     public Task(String description, int duration) {
         this.description = description;
+        this.created = new Date();
         this.duration = duration;
-        this.created=new Date();
     }
+
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name="ID",unique = true)
-
+    @Column(name = "ID", unique = true)
     public int getId() {
-        return Id;
+        return id;
     }
-    @NotNull
-    @Column(name="DESCRIPTION")
+
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
 
+    @NotNull
+    @Column(name="CREATED")
     public Date getCreated() {
         return created;
     }
@@ -45,7 +46,7 @@ public class Task{
     }
 
     private void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     private void setDescription(String description) {
