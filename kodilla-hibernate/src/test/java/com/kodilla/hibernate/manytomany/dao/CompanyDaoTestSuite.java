@@ -9,34 +9,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CompanyDaoTestSuite {
     @Autowired
     CompanyDao companyDao;
 
+    @Autowired
+    EmployeeDao employeeDao;
+
     @Test
-    public void testSaveManyToMany(){
+    public void testSaveManyToMany() {
         //Given
-        Employee johnSmith = new Employee("John","Smith");
-        Employee stephanieClarckson = new Employee("Stephanie","Clarckson");
+        Employee johnSmith = new Employee("John", "Smith");
+        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
         Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
 
         Company softwareMachine = new Company("Software Machine");
         Company dataMaesters = new Company("Data Maesters");
         Company greyMatter = new Company("Grey Matter");
 
-    softwareMachine.getEmployees().add(johnSmith);
-            dataMaesters.getEmployees().add(stephanieClarckson);
-            dataMaesters.getEmployees().add(lindaKovalsky);
-            greyMatter.getEmployees().add(johnSmith);
-            greyMatter.getEmployees().add(lindaKovalsky);
+        softwareMachine.getEmployees().add(johnSmith);
+        dataMaesters.getEmployees().add(stephanieClarckson);
+        dataMaesters.getEmployees().add(lindaKovalsky);
+        greyMatter.getEmployees().add(johnSmith);
+        greyMatter.getEmployees().add(lindaKovalsky);
 
-            johnSmith.getCompanies().add(softwareMachine);
-            johnSmith.getCompanies().add(greyMatter);
-            stephanieClarckson.getCompanies().add(dataMaesters);
-            lindaKovalsky.getCompanies().add(dataMaesters);
-            lindaKovalsky.getCompanies().add(greyMatter);
+        johnSmith.getCompanies().add(softwareMachine);
+        johnSmith.getCompanies().add(greyMatter);
+        stephanieClarckson.getCompanies().add(dataMaesters);
+        lindaKovalsky.getCompanies().add(dataMaesters);
+        lindaKovalsky.getCompanies().add(greyMatter);
         //When
         companyDao.save(softwareMachine);
         int softwareMachineId = softwareMachine.getId();
@@ -51,14 +57,72 @@ public class CompanyDaoTestSuite {
         Assert.assertNotEquals(0, greyMatterId);
 
         //CleanUp
-                try {
-                    companyDao.delete(softwareMachineId);
-                    companyDao.delete(dataMaestersId);
-                    companyDao.delete(greyMatterId);
-                }
-            catch (Exception e){
-                        //do nothing
-                    }
+        try {
+            companyDao.delete(softwareMachineId);
+            companyDao.delete(dataMaestersId);
+            companyDao.delete(greyMatterId);
+        } catch (Exception e) {
+            //do nothing
         }
     }
+
+    @Test
+    public void testNamedQueriesEmploeeLastName() {
+        //Given
+        Employee johnSmith = new Employee("John", "Smith");
+        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
+        Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
+        Employee lindaSmith = new Employee("Linda", "Smith");
+
+        employeeDao.save(johnSmith);
+        employeeDao.save(stephanieClarckson);
+        employeeDao.save(lindaKovalsky);
+        employeeDao.save(lindaSmith);
+
+        //When
+        List<Employee> employeesSmith = employeeDao.selectEmployeesWithName("Smith");
+        //Then
+        Assert.assertEquals(2, employeesSmith.size());
+        //CleanUp
+        try {
+            employeeDao.delete(1);
+            employeeDao.delete(2);
+            employeeDao.delete(3);
+            employeeDao.delete(4);
+
+        } catch (Exception e) {
+            // do nothing
+        }
+    }
+
+    @Test
+    public void testNamedNativeQuerySelectNameWithParam() {
+        //Given
+        Company softwareMachine = new Company("Software Machine");
+        Company dataMaesters = new Company("Data Maesters");
+        Company greyMatter = new Company("Grey Matter");
+        Company grey = new Company("Grey");
+
+        companyDao.save(softwareMachine);
+        companyDao.save(dataMaesters);
+        companyDao.save(greyMatter);
+        companyDao.save(grey);
+        //When
+
+        List<Company> companiesWithSpecifiedName = companyDao.selectNameWithParam("Gre");
+
+        //Then
+
+        Assert.assertEquals(2, companiesWithSpecifiedName.size());
+
+        //CleanUp
+        try {
+            companyDao.delete(1);
+            companyDao.delete(2);
+            companyDao.delete(3);
+            companyDao.delete(4);
+        } catch (Exception e) { //do nothing
+        }
+    }
+}
 
