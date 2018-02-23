@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class SudokuGame extends Prototype {
+public class SudokuGame {
     public final static int MIN_INDEX = 0;
     public final static int MAX_INDEX = 8;
 
