@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SudokuGame extends Prototype {
+public class SudokuGame {
     public final static int MIN_INDEX = 0;
     public final static int MAX_INDEX = 8;
 
