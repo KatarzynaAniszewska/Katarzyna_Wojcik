@@ -10,6 +10,9 @@ public class SudokuRow {
             sudokuElements.add(new SudokuElement());
             this.sudokuElements=sudokuElements;
         }
+    public SudokuRow (int numberOfElements) {
+        this.sudokuElements = new ArrayList<>(numberOfElements);
+    }
 
 
     public List<SudokuElement> getSudokuElements() {

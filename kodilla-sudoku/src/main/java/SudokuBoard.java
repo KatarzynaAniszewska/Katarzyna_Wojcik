@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 
 public class SudokuBoard extends Prototype {
@@ -27,13 +28,13 @@ public class SudokuBoard extends Prototype {
                 .collect(Collectors.toList());
     }
 
-    public SudokuBoard deepCopy() throws CloneNotSupportedException {
+    public SudokuBoard deepCopy()throws CloneNotSupportedException {
         SudokuBoard clonedSudokuBoard = (SudokuBoard) super.clone();
         clonedSudokuBoard.sudokuRows = new ArrayList<>();
         for (SudokuRow sudokuRow : sudokuRows) {
-            SudokuRow clonedSudokuRow = new SudokuRow();
+            SudokuRow clonedSudokuRow = new SudokuRow(0);
             for (SudokuElement sudokuElement : sudokuRow.getSudokuElements()) {
-                clonedSudokuRow.getSudokuElements().add(sudokuElement);
+                clonedSudokuRow.getSudokuElements().add(sudokuElement.clone());
             }
             clonedSudokuBoard.getSudokuRows().add(clonedSudokuRow);
         }

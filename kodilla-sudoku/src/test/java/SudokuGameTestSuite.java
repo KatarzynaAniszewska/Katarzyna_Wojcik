@@ -1,5 +1,6 @@
 
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
@@ -13,42 +14,44 @@ public class SudokuGameTestSuite {
         SudokuRow sudokuRow = new SudokuRow();
         SudokuBoard sudokuBoard= new SudokuBoard();
 
-        sudokuBoard.getSudokuRows().get(0).getSudokuElements().add(0,new SudokuElement(5));
-        sudokuBoard.getSudokuRows().get(0).getSudokuElements().add(1,new SudokuElement(6));
-        sudokuBoard.getSudokuRows().get(0).getSudokuElements().add(3,new SudokuElement(8));
-        sudokuBoard.getSudokuRows().get(0).getSudokuElements().add(4,new SudokuElement(4));
-        sudokuBoard.getSudokuRows().get(0).getSudokuElements().add(5,new SudokuElement(7));
-        sudokuBoard.getSudokuRows().get(1).getSudokuElements().add(0,new SudokuElement(3));
-        sudokuBoard.getSudokuRows().get(1).getSudokuElements().add(2,new SudokuElement(9));
-        sudokuBoard.getSudokuRows().get(1).getSudokuElements().add(6,new SudokuElement(6));
-        sudokuBoard.getSudokuRows().get(2).getSudokuElements().add(2,new SudokuElement(8));
-        sudokuBoard.getSudokuRows().get(3).getSudokuElements().add(1,new SudokuElement(1));
-        sudokuBoard.getSudokuRows().get(3).getSudokuElements().add(5,new SudokuElement(8));
-        sudokuBoard.getSudokuRows().get(3).getSudokuElements().add(7,new SudokuElement(4));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(0,new SudokuElement(7));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(1,new SudokuElement(9));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(3,new SudokuElement(6));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(5,new SudokuElement(2));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(7,new SudokuElement(1));
-        sudokuBoard.getSudokuRows().get(4).getSudokuElements().add(8,new SudokuElement(8));
-        sudokuBoard.getSudokuRows().get(5).getSudokuElements().add(1,new SudokuElement(5));
-        sudokuBoard.getSudokuRows().get(5).getSudokuElements().add(3,new SudokuElement(3));
-        sudokuBoard.getSudokuRows().get(5).getSudokuElements().add(5,new SudokuElement(9));
-        sudokuBoard.getSudokuRows().get(6).getSudokuElements().add(6,new SudokuElement(2));
-        sudokuBoard.getSudokuRows().get(7).getSudokuElements().add(2,new SudokuElement(6));
-        sudokuBoard.getSudokuRows().get(7).getSudokuElements().add(6,new SudokuElement(8));
-        sudokuBoard.getSudokuRows().get(7).getSudokuElements().add(8,new SudokuElement(7));
-        sudokuBoard.getSudokuRows().get(8).getSudokuElements().add(3,new SudokuElement(3));
-        sudokuBoard.getSudokuRows().get(8).getSudokuElements().add(4,new SudokuElement(1));
-        sudokuBoard.getSudokuRows().get(8).getSudokuElements().add(5,new SudokuElement(6));
-        sudokuBoard.getSudokuRows().get(8).getSudokuElements().add(7,new SudokuElement(5));
-        sudokuBoard.getSudokuRows().get(8).getSudokuElements().add(8,new SudokuElement(9));
+        sudokuBoard.getSudokuRows().get(0).getSudokuElements().get(0).setValue(5);
+        sudokuBoard.getSudokuRows().get(0).getSudokuElements().get(1).setValue(3);
+        sudokuBoard.getSudokuRows().get(0).getSudokuElements().get(4).setValue(7);
+        sudokuBoard.getSudokuRows().get(1).getSudokuElements().get(0).setValue(6);
+        sudokuBoard.getSudokuRows().get(1).getSudokuElements().get(3).setValue(1);
+        sudokuBoard.getSudokuRows().get(1).getSudokuElements().get(4).setValue(9);
+        sudokuBoard.getSudokuRows().get(1).getSudokuElements().get(5).setValue(5);
+        sudokuBoard.getSudokuRows().get(2).getSudokuElements().get(1).setValue(9);
+        sudokuBoard.getSudokuRows().get(2).getSudokuElements().get(2).setValue(8);
+        sudokuBoard.getSudokuRows().get(2).getSudokuElements().get(7).setValue(6);
+        sudokuBoard.getSudokuRows().get(3).getSudokuElements().get(0).setValue(8);
+        sudokuBoard.getSudokuRows().get(3).getSudokuElements().get(4).setValue(6);
+        sudokuBoard.getSudokuRows().get(3).getSudokuElements().get(8).setValue(3);
+        sudokuBoard.getSudokuRows().get(4).getSudokuElements().get(0).setValue(4);
+        sudokuBoard.getSudokuRows().get(4).getSudokuElements().get(3).setValue(8);
+        sudokuBoard.getSudokuRows().get(4).getSudokuElements().get(5).setValue(3);
+        sudokuBoard.getSudokuRows().get(4).getSudokuElements().get(8).setValue(1);
+        sudokuBoard.getSudokuRows().get(5).getSudokuElements().get(0).setValue(7);
+        sudokuBoard.getSudokuRows().get(5).getSudokuElements().get(4).setValue(2);
+        sudokuBoard.getSudokuRows().get(5).getSudokuElements().get(8).setValue(6);
+        sudokuBoard.getSudokuRows().get(6).getSudokuElements().get(1).setValue(6);
+        sudokuBoard.getSudokuRows().get(6).getSudokuElements().get(6).setValue(2);
+        sudokuBoard.getSudokuRows().get(6).getSudokuElements().get(7).setValue(8);
+        sudokuBoard.getSudokuRows().get(7).getSudokuElements().get(3).setValue(4);
+        sudokuBoard.getSudokuRows().get(7).getSudokuElements().get(4).setValue(1);
+        sudokuBoard.getSudokuRows().get(8).getSudokuElements().get(5).setValue(9);
+        sudokuBoard.getSudokuRows().get(8).getSudokuElements().get(8).setValue(5);
+        sudokuBoard.getSudokuRows().get(8).getSudokuElements().get(4).setValue(8);
+        sudokuBoard.getSudokuRows().get(8).getSudokuElements().get(7).setValue(7);
+        sudokuBoard.getSudokuRows().get(8).getSudokuElements().get(8).setValue(9);
 
         SudokuGame sudokuGame = new SudokuGame();
 
-        List<SudokuRow> sudoku = sudokuGame.placeValuesOnBoard();
-        sudoku = sudokuBoard.getSudokuRows();
-        sudokuGame.printBoard();
+        sudokuGame.solveSudoku(sudokuBoard);
+
+       int x = sudokuGame.sumOfAllSudokuElements();
+
+        Assert.assertEquals(405,x);
 
 
 

@@ -1,22 +1,19 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class SudokuGame extends Prototype {
     public final static int MIN_INDEX = 0;
     public final static int MAX_INDEX = 8;
 
     SudokuRow sudokuRow = new SudokuRow();
-    SudokuBoard sudokuBoard = new SudokuBoard();
+    SudokuBoard sudokuBoard= new SudokuBoard();
+    SudokuElement sudokuElement=new SudokuElement();
     Scanner sc = new Scanner(System.in);
 
-    public void placeValuesOnBoard() {
-        boolean end = false;
+    public void placeValuesOnBoard() {//dlaczego jak tutaj wpiszę argument SudokuBoard sudokuBoard to do metody
+        boolean end = false;            // solve (SudokuBoard sudokuBoard przekazuje się nowy obiekt, tablica jest znów pusta
         while (!end) {
 
-            printBoard();
+            printBoard(sudokuBoard);
 
             String playerInput = sc.next();
 
@@ -47,29 +44,22 @@ public class SudokuGame extends Prototype {
         }
     }
 
-
-
-
-    public int sumOfAllSudokuElements(SudokuBoard sudokuBoard){
-        return sudokuBoard.getSudokuRows().stream().
-                flatMap(sudokuRow1 -> sudokuRow1.getSudokuElements().stream())
-                .map(sudokuElement1 -> sudokuElement1.getValue())
-                .reduce(0,(sum,current)->sum=sum+current);
-    }
-
     public void solveSudoku() {
+
         List<Integer> checkProgress = new ArrayList<>();
         checkProgress.add(0, 0);
         boolean end = false;
         int tryCounter = 1;
+
         while (!end) {
             int totalNumberOfpossibleValues = 0;
+            int numberOfEmptyFields = 0;
             for (int n = MIN_INDEX; n <= MAX_INDEX; n++) {
                 for (int k = MIN_INDEX; k <= MAX_INDEX; k++) {
-
                     SudokuElement field = sudokuBoard.getSudokuRows().get(n).getSudokuElements().get(k);
 
                     if (field.getValue() < 0) {
+                        numberOfEmptyFields += 1;
                         //CHECKING ROW
                         for (int i = MIN_INDEX; i <= MAX_INDEX; i++) {
                             if (sudokuBoard.getSudokuRows().get(n).getSudokuElements().get(i).getValue() > 0) {
@@ -78,13 +68,9 @@ public class SudokuGame extends Prototype {
                                     field.getFieldPossibleValues().remove(field.getFieldPossibleValues()
                                             .indexOf(sudokuBoard.getSudokuRows().get(n).getSudokuElements().get(i).getValue()));
 
-                                    if (field.getFieldPossibleValues().size() == 1) {
-                                        field.setValue(field.getFieldPossibleValues().get(0));//a tutaj już setValu działa ?????
-
                                     }
                                 }
                             }
-                        }
                         // CHECKING BOX
                         int boxRowMinIndex = n / 3 * 3;
                         int boxColumnMinIndex = k / 3 * 3;
@@ -99,10 +85,6 @@ public class SudokuGame extends Prototype {
                                         field.getFieldPossibleValues()
                                                 .remove(field.getFieldPossibleValues().
                                                         indexOf(sudokuBoard.getSudokuRows().get(br).getSudokuElements().get(bc).getValue()));
-
-                                        if (field.getFieldPossibleValues().size() == 1) {
-                                            field.setValue(field.getFieldPossibleValues().get(0));
-                                        }
                                     }
                                 }
                             }
@@ -118,24 +100,92 @@ public class SudokuGame extends Prototype {
                         }
                         if (field.getFieldPossibleValues().size() == 1) {
                             field.setValue(field.getFieldPossibleValues().get(0));
+                            System.out.println(field.getFieldPossibleValues().get(0));
                         }
-
 
                         totalNumberOfpossibleValues += field.getFieldPossibleValues().size();
                     }
-
-                    tryCounter += 1;
-                    checkProgress.add(tryCounter - 1, totalNumberOfpossibleValues);
-                    if (checkProgress.get(tryCounter - 1).equals(checkProgress.get(tryCounter - 2))
-                        &&(sumOfAllSudokuElements(sudokuBoard)<450)) {
-                        System.out.println("waiting for solution");
-                        end=true;
-                    }else if (sumOfAllSudokuElements(sudokuBoard)==450){end=true; printBoard();
-                    System.out.println(sudokuBoard);}
                 }
             }
+
+            tryCounter += 1;
+            checkProgress.add(tryCounter - 1, totalNumberOfpossibleValues);
+            if (numberOfEmptyFields == 0) {
+
+                System.out.println("SUCSESSSSS");
+                end = true;
+            } else if ((numberOfEmptyFields > 0) && (checkProgress.get(tryCounter - 1).equals(checkProgress.get(tryCounter - 2)))) {
+
+                System.out.println("waiting for solution");
+
+                solveSudokuWhenMoreThenOneSolution();
+            }
+            printBoard(sudokuBoard);
+            System.out.println(sumOfAllSudokuElements());
         }
     }
+    public int sumOfAllSudokuElements() {
+        return sudokuBoard.getSudokuRows().stream().
+                flatMap(sudokuRow1 -> sudokuRow1.getSudokuElements().stream())
+                .map(sudokuElement1 -> sudokuElement1.getValue())
+                .reduce(0, (sum, current) -> sum = sum + current);
+    }
+
+    public void solveSudokuWhenMoreThenOneSolution() {
+        boolean end = false;
+        while (!end) {
+        ArrayDeque<Backtrack> backtracks = new ArrayDeque<>();
+        SudokuBoard clonedSudokuBoard = cloneSudokuBoard();
+
+            backtracks.push(new Backtrack(clonedSudokuBoard));
+
+
+                Random rand = new Random();
+                int randomColumn = rand.nextInt(MAX_INDEX +1);
+                int randomRow = rand.nextInt(MAX_INDEX +1);
+            SudokuElement field = sudokuBoard.getSudokuRows().get(randomColumn).getSudokuElements().get(randomRow);
+
+
+            if ((field.getValue() < 0) && (field.getFieldPossibleValues().size() > 0)) {
+                int bound = field.getFieldPossibleValues().size();
+                int index = rand.nextInt(bound);
+                int drawedValue = field.getFieldPossibleValues().get(index);
+
+                field.setValue(drawedValue);
+
+                field.getFieldPossibleValues().remove(field.getFieldPossibleValues().indexOf(drawedValue));
+
+                System.out.println("bound" + bound);
+                System.out.println("random" + index);
+                System.out.println("drawed" + drawedValue);
+
+                solveSudoku();
+
+
+            } else if ((field.getValue() < 0)&&(field.getFieldPossibleValues().size() == 0) && (backtracks.size() > 0)) {
+
+               sudokuBoard = backtracks.peek().getSudokuBoard();
+               System.out.println("back size" + backtracks.size());
+                System.out.println("col "+randomColumn);
+                System.out.println("row"+randomRow);
+                System.out.println(field.getFieldPossibleValues().size());
+
+            }
+
+        }
+    }
+
+
+
+
+
+            //Backtrack backtrack = backtracks.pop();
+
+            //clonedSudokuBoard.getSudokuRows().get(backtrack.getColumnNumber()).
+            //getSudokuElements().get(backtrack.getRowNumber()).setValue(SudokuElement.EMPTY);
+
+
+
 
 
     public SudokuBoard cloneSudokuBoard() {
@@ -151,7 +201,7 @@ public class SudokuGame extends Prototype {
 
 
 
-        public void printBoard () {
+        public void printBoard (SudokuBoard sudokuBoard) {
             String result = "";
 
             for (int k = MIN_INDEX; k <= MAX_INDEX; k++) {
@@ -163,7 +213,7 @@ public class SudokuGame extends Prototype {
                 for (int m = MIN_INDEX; m <= MAX_INDEX; m++) {
                     if (sudokuBoard.getSudokuRows().get(k).getSudokuElements().get(m).getValue() > 0) {
                         result += sudokuBoard.getSudokuRows().get(k).getSudokuElements().get(m).getValue() + " ";
-                    } else result += "   ";
+                    } else result += "  ";
                     if (((m + 1) % 3 == 0) && (m > 0)) {
                         result += "|";
                     }
@@ -175,19 +225,7 @@ public class SudokuGame extends Prototype {
             }
             System.out.println(result);
         }
-        //poniższe do usunięcia po zakończeniu pisania kodu
-    public void cloneTest(){
-        String join = cloneSudokuBoard().getSudokuRows().stream().
-                map(x->x.toString())
-                .collect(Collectors.joining(" \n","",""));
-        System.out.println(join);
-    }
-    public void noCloneTest(){
-        String join = sudokuBoard.getSudokuRows().stream().
-                map(x->x.toString())
-                .collect(Collectors.joining(" \n","",""));
-        System.out.println(join);
-    }
+
     }
 
 
