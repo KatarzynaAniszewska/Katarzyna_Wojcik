@@ -7,11 +7,11 @@ public class SudokuRunner {
         SudokuGame sudokuGame = new SudokuGame();
 
        sudokuGame.placeValuesOnBoard();
-   // sudokuGame.solveSudoku();
-sudokuGame.solveSudokuWhenMoreThenOneSolution();
+       sudokuGame.solveSudoku();
+
+//sudokuGame.solveSudokuWhenMoreThenOneSolution();
 
         }
     }
-
 
 
