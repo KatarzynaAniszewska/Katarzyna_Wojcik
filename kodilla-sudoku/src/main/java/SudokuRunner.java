@@ -1,17 +1,24 @@
+import com.sun.org.apache.xpath.internal.SourceTree;
+
+import java.util.Scanner;
+
 public class SudokuRunner {
 
     public static void main(String[] args) {
-        SudokuBoard sudokuBoard = new SudokuBoard();
-        sudokuBoard.getSudokuRows();
 
-        SudokuGame sudokuGame = new SudokuGame();
+        boolean finishedGame = false;
+        Scanner scan = new Scanner(System.in);
 
-       sudokuGame.placeValuesOnBoard();
-       sudokuGame.solveSudoku();
-
-//sudokuGame.solveSudokuWhenMoreThenOneSolution();
-
+        boolean gameFinished = false;
+        while(!gameFinished) {
+            SudokuGame theGame = new SudokuGame();
+            theGame.playSudoku();
+            gameFinished = theGame.resolveSudoku();
         }
+
+
     }
+}
+
 
 

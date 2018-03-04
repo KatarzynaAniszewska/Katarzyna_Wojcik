@@ -1,40 +1,30 @@
 public class Backtrack {
+
     private SudokuBoard sudokuBoard;
-    private int rowNumber;
-    private int columnNumber;
-    private int fieldValue;
+    private int randomRowIndex;
+    private int randomColumnIndex;
+    private int randomValue;
 
-    public Backtrack(SudokuBoard sudokuBoard, int rowNumber, int columnNumber, int fieldValue) {
+    public Backtrack(SudokuBoard sudokuBoard, int randomRowIndex, int randomColumnIndex, int randomValue) {
         this.sudokuBoard = sudokuBoard;
-        this.rowNumber = rowNumber;
-        this.columnNumber = columnNumber;
-        this.fieldValue = fieldValue;
+        this.randomRowIndex = randomRowIndex;
+        this.randomColumnIndex = randomColumnIndex;
+        this.randomValue = randomValue;
     }
-
 
     public SudokuBoard getSudokuBoard() {
         return sudokuBoard;
     }
 
-    public int getRowNumber() {
-        return rowNumber;
+    public int getRandomRowIndex() {
+        return randomRowIndex;
     }
 
-    public int getColumnNumber() {
-        return columnNumber;
+    public int getRandomColumnIndex() {
+        return randomColumnIndex;
     }
 
-    public int getFieldValue() {
-        return fieldValue;
-    }
-
-    @Override
-    public String toString() {
-        return "Backtrack{" +
-                "sudokuBoard=" + sudokuBoard +
-                ", rowNumber=" + rowNumber +
-                ", columnNumber=" + columnNumber +
-                ", value=" + fieldValue +
-                '}';
+    public int getRandomValue() {
+        return randomValue;
     }
 }

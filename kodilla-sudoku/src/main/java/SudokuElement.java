@@ -14,6 +14,7 @@ public class SudokuElement implements Cloneable {
             this.fieldPossibleValues=fieldPossibleValues;
     }
 
+
     public void setValue(int value) {
         this.value = value;
     }
@@ -26,7 +27,6 @@ public class SudokuElement implements Cloneable {
         return value;
     }
 
-
     @Override
     public String toString() {
         return "SudokuElement{" +
@@ -34,9 +34,16 @@ public class SudokuElement implements Cloneable {
                 '}';
     }
     public SudokuElement clone() throws CloneNotSupportedException {
-        return (SudokuElement) super.clone();
+        SudokuElement cloned = new SudokuElement();
+        List<Integer>clonedFieldPossibleValues= new ArrayList<>();
+        for(int i:this.fieldPossibleValues){
+            clonedFieldPossibleValues.add(i);
+        }
+        return cloned;
 
     }
+
+
 
 
 

@@ -14,7 +14,6 @@ public class SudokuRow {
         this.sudokuElements = new ArrayList<>(numberOfElements);
     }
 
-
     public List<SudokuElement> getSudokuElements() {
         return sudokuElements;
     }
