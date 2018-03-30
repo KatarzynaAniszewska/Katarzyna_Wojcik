@@ -1,15 +1,22 @@
 package com.kodilla.hibernate.manytomany;
 
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
+@NamedQueries({
+        @NamedQuery( name= "Employee.selectEmployeesWithName",
+                query ="FROM Employee WHERE lastName LIKE:LASTNAME"
 
-@NamedQuery( name= "Employee.selectEmployeesWithName",
-        query ="FROM Employee WHERE lastName LIKE:LASTNAME"
+        ),
+        @NamedQuery( name= "Employee.selectEmployeesWithNameToFacade",
+                query ="FROM Employee WHERE lastName LIKE:%LASTNAME%"
 
-)
-
+        )
+})
+@Repository
 @Entity
 @Table(name = "EMPLOYEES")
 

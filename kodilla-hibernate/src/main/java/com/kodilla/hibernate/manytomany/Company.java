@@ -1,16 +1,25 @@
 package com.kodilla.hibernate.manytomany;
 
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
-
-@NamedNativeQuery(name ="Company.selectNameWithParam",
-                query = "SELECT * FROM COMPANIES"+
-                        " WHERE SUBSTR(COMPANY_NAME,1,3) LIKE:NAMEPARAM",
+@NamedNativeQueries({
+        @NamedNativeQuery(name = "Company.selectNameWithParam",
+                query = "SELECT * FROM COMPANIES" +
+                        " WHERE SUBSTR(COMPANY_NAME,1,3) LIKE:'%NAMEPARAM%'",
                 resultClass = Company.class
-)
+        ),
 
+        @NamedNativeQuery(name = "Company.selectNameWithParamToFacade",
+                query = "SELECT * FROM COMPANIES" +
+                        " WHERE COMPANY_NAME LIKE:NAMEPARAM",
+                resultClass = Company.class
+        )
+})
+@Repository
 @Entity
 @Table(name="COMPANIES")
 public class Company {

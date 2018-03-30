@@ -121,7 +121,8 @@ public class CompanyDaoTestSuite {
             companyDao.delete(2);
             companyDao.delete(3);
             companyDao.delete(4);
-        } catch (Exception e) { //do nothing
+        } catch (Exception e) {
+            //do nothing
         }
     }
 }
