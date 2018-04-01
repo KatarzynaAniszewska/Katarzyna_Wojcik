@@ -29,8 +29,8 @@ public class Homework implements ObservableHomeworks {
     public void removeObserver(ObseverMentor obseverMentor) {
         mentors.remove(obseverMentor);
     }
-    public void addHomework(String task) {
-        homeworks.add(task);
+    public void addHomework(String homework) {
+        homeworks.push(homework);
         notifytObserver();
     }
 
