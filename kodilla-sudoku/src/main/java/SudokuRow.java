@@ -21,7 +21,6 @@ public class SudokuRow {
     public void addSudokuElement(int position,SudokuElement sudokuElement){
         sudokuElements.add(position,sudokuElement);
     }
-
     @Override
     public String toString() {
         return "SudokuRow{" +

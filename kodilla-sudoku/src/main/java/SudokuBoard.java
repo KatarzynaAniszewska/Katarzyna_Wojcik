@@ -11,7 +11,6 @@ public class SudokuBoard extends Prototype {
             sudokuRows.add(new SudokuRow());
         this.sudokuRows = sudokuRows;
     }
-
     public void addSudokuRow(int position, SudokuRow sudokuRow) {
         sudokuRows.add(position, sudokuRow);
     }
@@ -26,7 +25,6 @@ public class SudokuBoard extends Prototype {
         for (SudokuRow sudokuRow : sudokuRows) {
             SudokuRow clonedSudokuRow = new SudokuRow();
             for (SudokuElement sudokuElement : sudokuRow.getSudokuElements()) {
-
                 clonedSudokuRow.getSudokuElements().add(sudokuElement.clone());
             }
             clonedSudokuBoard.getSudokuRows().add(clonedSudokuRow);

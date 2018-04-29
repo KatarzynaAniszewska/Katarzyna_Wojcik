@@ -3,7 +3,6 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 import java.util.Scanner;
 
 public class SudokuRunner {
-
     public static void main(String[] args) {
 
         boolean finishedGame = false;
@@ -15,8 +14,6 @@ public class SudokuRunner {
             theGame.playSudoku();
             gameFinished = theGame.resolveSudoku();
         }
-
-
     }
 }
 
