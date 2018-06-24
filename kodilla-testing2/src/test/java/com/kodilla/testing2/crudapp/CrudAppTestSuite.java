@@ -57,9 +57,10 @@ public class CrudAppTestSuite {
 
         driver.findElements(By.xpath("//form[@class = \"datable_row\"]")).stream()
                 .filter(anyForm ->
-                        anyForm.getText().equals(taskName))
+                        anyForm.findElement(By.xpath(.//p[@class=\"datable_field-value\"]"))
+                                                     .getText().equals(taskName))
 
-                .forEach(theForm -> {
+                .forEach(theForm -> {   
                     WebElement selectElemnt = theForm.findElement(By.xpath("//select[1]"));
                     Select select = new Select(selectElemnt);
                     select.selectByIndex(1);
